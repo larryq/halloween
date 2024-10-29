@@ -1,7 +1,7 @@
-import * as THREE from 'three'
+//import * as THREE from 'three'
 import { createRoot } from 'react-dom/client'
-import React, { useRef, useState, useEffect } from 'react'
-import { Canvas, useFrame } from '@react-three/fiber'
+import { /*useRef, useState,*/ useEffect } from 'react'
+import { Canvas, /*useFrame */} from '@react-three/fiber'
 import { getProject } from '@theatre/core'
 import studio from '@theatre/studio'
 import extension from '@theatre/r3f/dist/extension'
@@ -50,6 +50,7 @@ export function Fish(props: any) {
       <mesh
         castShadow
         receiveShadow
+        //@ts-ignore
         geometry={nodes.Cube.geometry}
         material={materials['fish body - wave']}
         position={[0.173, -0.029, 0.013]}
@@ -57,6 +58,7 @@ export function Fish(props: any) {
       <mesh
         castShadow
         receiveShadow
+        //@ts-ignore
         geometry={nodes.Sphere.geometry}
         material={materials['eyeball white']}
         position={[1.02, 0.276, 1.006]}
@@ -65,6 +67,7 @@ export function Fish(props: any) {
       <mesh
         castShadow
         receiveShadow
+        //@ts-ignore
         geometry={nodes.Sphere001.geometry}
         material={materials['eye iris']}
         position={[1.02, 0.276, 1.232]}
@@ -73,6 +76,7 @@ export function Fish(props: any) {
       <mesh
         castShadow
         receiveShadow
+        //@ts-ignore
         geometry={nodes.Sphere002.geometry}
         material={materials['eyeball white']}
         position={[-0.673, 0.276, 1.006]}
@@ -81,6 +85,7 @@ export function Fish(props: any) {
       <mesh
         castShadow
         receiveShadow
+        //@ts-ignore
         geometry={nodes.Sphere003.geometry}
         material={materials['eye iris']}
         position={[-0.673, 0.276, 1.232]}
