@@ -11,8 +11,11 @@ import { PerspectiveCamera } from '@theatre/r3f'
 import { useGLTF, Environment } from '@react-three/drei'
 import demoProjectState from './Demo Project.theatre-project-state.json'
 
-studio.initialize()
-studio.extend(extension)
+// Vite
+if (import.meta.env.DEV) {
+  studio.initialize()
+  studio.extend(extension)
+}
 
 // our Theatre.js project sheet, we'll use this later
 //var demoSheet = getProject('Demo Project').sheet('Demo Sheet')
