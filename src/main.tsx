@@ -1,5 +1,6 @@
-import * as THREE from 'three'
+
 //@ts-nocheck
+import * as THREE from 'three'
 import { createRoot } from 'react-dom/client'
 import { /*useRef, useState,*/ useEffect } from 'react'
 import { Canvas, /*useFrame */} from '@react-three/fiber'
@@ -42,8 +43,8 @@ const App = () => {
       <SheetProvider sheet={demoSheet}>
       <PerspectiveCamera theatreKey="Camera" makeDefault position={[5, 5, -5]} fov={75} />
       {/* <ambientLight color={0xfefefe} intensity={0.2}/> */}
-      <Environment theatreKey="preset" preset="city" />
-      <directionalLight theatreKey="directionalLight" position={[0, 3, 5]} color="green" />
+      <Environment preset="city" />
+      <directionalLight position={[0, 3, 5]} color="green" />
       <e.pointLight theatreKey="Light" position={[10, 10, 10]} />
  {/*      <e.mesh theatreKey='Cube'>
         <boxGeometry args={[1, 1, 1]} />
